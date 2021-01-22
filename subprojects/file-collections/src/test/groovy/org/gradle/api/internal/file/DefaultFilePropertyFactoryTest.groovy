@@ -234,8 +234,8 @@ class DefaultFilePropertyFactoryTest extends Specification {
         tree.files
 
         then:
-        // Is that OK?
-        noExceptionThrown()
+        def e5 = thrown(IllegalStateException)
+        e5.message == 'Cannot query the value of this property because it has no value available.'
     }
 
     @SuppressWarnings("GroovyAssignabilityCheck")
