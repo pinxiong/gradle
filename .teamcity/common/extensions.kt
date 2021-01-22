@@ -119,7 +119,7 @@ fun BuildSteps.checkCleanM2(os: Os = Os.LINUX) {
     }
 }
 
-fun buildToolGradleParameters(daemon: Boolean = true, isContinue: Boolean = true): List<String> =
+fun buildToolGradleParameters(daemon: Boolean = false, isContinue: Boolean = true): List<String> =
     listOf(
         // We pass the 'maxParallelForks' setting as 'workers.max' to limit the maximum number of executers even
         // if multiple test tasks run in parallel. We also pass it to the Gradle build as a maximum (maxParallelForks)
