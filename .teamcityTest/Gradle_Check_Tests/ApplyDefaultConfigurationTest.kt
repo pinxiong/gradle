@@ -123,6 +123,6 @@ class ApplyDefaultConfigurationTest {
     fun getGradleStep(stepName: String) = steps.items.find { it.name == stepName }!! as GradleBuildStep
 
     private
-    fun expectedRunnerParam(daemon: String = "--daemon", extraParameters: String = "") =
+    fun expectedRunnerParam(daemon: String = "--no-daemon", extraParameters: String = "") =
         "-Dorg.gradle.workers.max=%maxParallelForks% -PmaxParallelForks=%maxParallelForks% -s $daemon --continue $extraParameters -PteamCityBuildId=%teamcity.build.id% \"-Dscan.tag.Check\" \"-Dscan.tag.\""
 }
