@@ -22,11 +22,10 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.FileVisitOption;
 import java.nio.file.Files;
 
-class BuildSrcValidator {
-    private static final Logger LOGGER = LoggerFactory.getLogger(BuildSrcValidator.class);
+class BuildSrcDetector {
+    private static final Logger LOGGER = LoggerFactory.getLogger(BuildSrcDetector.class);
     private static final String[] GRADLE_BUILD_FILES = new String[] {
             "settings.gradle", "settings.gradle.kts", "build.gradle", "build.gradle.kts"
     };

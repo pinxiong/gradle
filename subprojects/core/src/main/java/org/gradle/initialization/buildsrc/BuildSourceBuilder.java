@@ -77,7 +77,7 @@ public class BuildSourceBuilder {
     }
 
     private ClassPath createBuildSourceClasspath(File buildSrcDir, final StartParameter containingBuildParameters, ClassLoaderScope parentClassLoaderScope) {
-        if (!BuildSrcValidator.isValidBuildSrcBuild(buildSrcDir)) {
+        if (!BuildSrcDetector.isValidBuildSrcBuild(buildSrcDir)) {
             return ClassPath.EMPTY;
         }
 

@@ -17,7 +17,6 @@
 package org.gradle.initialization.buildsrc
 
 import org.gradle.integtests.fixtures.AbstractIntegrationSpec
-import org.gradle.test.fixtures.file.TestFile
 
 class BuildSrcLocationIntegrationTest extends AbstractIntegrationSpec {
 

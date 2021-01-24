@@ -22,9 +22,9 @@ import org.junit.Rule
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static org.gradle.initialization.buildsrc.BuildSrcValidator.isValidBuildSrcBuild
+import static BuildSrcDetector.isValidBuildSrcBuild
 
-class BuildSrcValidatorTest extends Specification {
+class BuildSrcDetectorTest extends Specification {
 
     @Rule
     TestNameTestDirectoryProvider temp = new TestNameTestDirectoryProvider(getClass())
